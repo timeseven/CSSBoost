@@ -1,0 +1,43 @@
+.flex-container {
+  display: flex;
+  flex-direction: row; /* row(default) column row-reverse column-reverse*/
+  justify-content: flex-start; /*flex-sart(default) flex-end center space-between space-around space-evenly*/
+  align-items: flex-start; /*stretch(default)  flex-start flex-end center baseline */
+  flex-wrap: nowrap; /*nowrap(default) wrap wrap-reverse*/
+  align-content: flex-start; /* used to change the behavior of flex-wrap, available in multi rows/columns
+                                stretch(default) flex-start flex-end center space-between space-around*/
+
+  width: 500px;
+  height: 120px;
+  background-color: lightgrey;
+}
+
+.flex-item {
+  flex: 0 1 auto; /*stard for flex-grow flex-shrink flex-basis, if flex-wrap is not nowrap, flex-shrink maynot work
+             auto: 1 1 auto, initial:0 1 auto, none:0 0 auto, inherit: from partent */
+  background-color: cornflowerblue;
+  width: 180px;
+  height: 100px;
+  margin: 2px;
+}
+
+.item-1 {
+  order: 1;
+}
+.item-2 {
+  order: 2;
+}
+.item-3 {
+  order: 3;
+}
+.item-4 {
+  order: 4;
+}
+.item-5 {
+  order: 5;
+  align-self: flex-start; /* available when align-content is not defined(default stretch) or align-conent is stretch
+                          auto(default) flex-start flex-end center baseline stretch*/
+}
+.item-6 {
+  order: 6;
+}
