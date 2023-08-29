@@ -1,5 +1,9 @@
 "# CSSBoost"
 
-## Demo 1:
+### Demo 1:
 
-_Flex practice_
+Flex practice
+
+### Demo 2:
+
+Media Queries
